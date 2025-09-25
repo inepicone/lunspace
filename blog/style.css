@@ -1,29 +1,28 @@
 .blog-post {
-  max-width: 700px;        /* parecido al ancho de página en Docs */
-  margin: 4rem auto;       /* centrado con bastante aire arriba y abajo */
+  max-width: 800px;
+  margin: 4rem auto;
   padding: 0 2rem;
-  background: #fff;        /* fondo blanco */
-  color: #545454;          /* el color que ya definimos */
-  font-size: 1.05rem;      /* un poquito más grande para lectura */
-  line-height: 1.8;        /* interlineado como en Drive */
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .blog-post h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-  text-align: center;      /* título centrado */
-  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: var(--text);
 }
 
 .blog-post em {
   display: block;
-  text-align: center;
   margin-bottom: 2rem;
-  color: #888;
+  color: var(--muted);
 }
 
 .blog-post p {
-  text-align: justify;     /* justificado como en Drive */
-  text-indent: 2em;        /* sangría al inicio */
-  margin-bottom: 1.5rem;   /* espacio entre párrafos */
+  text-align: justify;
+  text-indent: 1.5em;
+  margin-bottom: 1.5rem;
 }
