@@ -1,81 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lun Blog – From idea to orbit</title>
-  <link rel="stylesheet" href="../style.css">
-  <style>
-    .blog-post {
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.8;
-    }
-    .blog-post h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2rem;
-    }
-    .blog-post p {
-      margin-bottom: 1.5rem;
-      text-align: justify; /* 👉 justifica el texto */
-    }
-    .blog-post em {
-      color: #777;
-    }
-    .blog-post a.back {
-      display: inline-block;
-      margin-top: 2rem;
-      text-decoration: none;
-      color: var(--primary);
-    }
-  </style>
-</head>
-<body>
-  <div class="container blog-post">
-    <h1>From idea to orbit: how satellites come to life</h1>
-    <p><em>Posted on March 2025 – by Inés Picone</em></p>
+<div class="container blog-post">
+  <h1>From idea to orbit: how satellites come to life</h1>
+  <p><em>Posted on March 2025 – by Inés Picone</em></p>
 
-    <p>Hi everyone, I’m Inés Picone, CEO and co-founder of Lun, where we are accelerating satellite design. But this blog is not just about us. The goal is to spark conversation, share insights, and connect with the space community and enthusiasts. Feel free to comment, ask, or challenge me.</p>
+  <p>Hi everyone, I’m Inés Picone, CEO and co-founder of Lun, where we are accelerating satellite design. But this blog is not just about us. The goal is to spark conversation, share insights, and connect with the space community and enthusiasts. Feel free to comment, ask, or challenge me.</p>
 
-    <p>For me, space is awesome, and what I like the most is the science behind it, pushing human curiosity to keep digging. I can’t hide it, I love it.</p>
+  <p>For me, space is awesome, and what I like the most is the science behind it, pushing human curiosity to keep digging. I can’t hide it, I love it.</p>
 
-    <p>So how do satellites come to life? Like every ambitious project, it is challenging. But if you follow some general steps, surround yourself with the right people, and use the right tools (like Lun), it becomes possible.</p>
+  <p>So how do satellites come to life? Like every ambitious project, it is challenging. But if you follow some general steps, surround yourself with the right people, and use the right tools (like Lun), it becomes possible.</p>
 
-    <p>The first step is to define the mission. Every satellite starts with a mission goal: earth observation, communications, scientific research, navigation, or defense. At this stage you define what the satellite must achieve in terms of resolution, coverage, data rate, and lifespan.</p>
+  <p>The first step is to define the mission. Every satellite starts with a mission goal: earth observation, communications, scientific research, navigation, or defense. At this stage you define what the satellite must achieve in terms of resolution, coverage, data rate, and lifespan.</p>
 
-    <p>Then comes system design and trade-offs. This is where satellite generator models and simulators are often used. Teams explore trade-offs between payload, mass, power, and cost. Should it carry a large optical instrument or a smaller multispectral sensor? How much power is needed? How big should the solar panels be? This stage is highly iterative, often taking months of manual coordination between teams.</p>
+  <p>Then comes system design and trade-offs. This is where satellite generator models and simulators are often used. Teams explore trade-offs between payload, mass, power, and cost. Should it carry a large optical instrument or a smaller multispectral sensor? How much power is needed? How big should the solar panels be? This stage is highly iterative, often taking months of manual coordination between teams.</p>
 
-    <p>What follows is the preliminary design. Here the spacecraft’s architecture is drafted: payload, avionics, thermal control, propulsion, and structure. Engineers begin to model how these subsystems fit together, often using CAD tools that do not always sync with system-level simulations. The good news is that Lun already automates this step and can reduce costs by up to 80 percent.</p>
+  <p>What follows is the preliminary design. Here the spacecraft’s architecture is drafted: payload, avionics, thermal control, propulsion, and structure. Engineers begin to model how these subsystems fit together, often using CAD tools that do not always sync with system-level simulations. The good news is that Lun already automates this step and can reduce costs by up to 80 percent.</p>
 
-    <p>Next is detailed design and manufacturing. The concept is transformed into engineering drawings, CAD models, and part lists. Components are sourced or built, and the spacecraft is assembled in clean rooms. This is the most resource-intensive stage, involving hundreds of engineers and suppliers. Personally, I find it the most fascinating part.</p>
+  <p>Next is detailed design and manufacturing. The concept is transformed into engineering drawings, CAD models, and part lists. Components are sourced or built, and the spacecraft is assembled in clean rooms. This is the most resource-intensive stage, involving hundreds of engineers and suppliers. Personally, I find it the most fascinating part.</p>
 
-    <p>After that comes testing and qualification. Scary but absolutely necessary. Before launch, satellites go through rigorous testing such as vibration (to simulate launch), thermal vacuum (to simulate space conditions), and radiation exposure. These tests ensure the spacecraft will survive the extreme conditions of space. Will Lun’s designs pass these tests? Call us and you can try it yourself.</p>
+  <p>After that comes testing and qualification. Scary but absolutely necessary. Before launch, satellites go through rigorous testing such as vibration (to simulate launch), thermal vacuum (to simulate space conditions), and radiation exposure. These tests ensure the spacecraft will survive the extreme conditions of space. Will Lun’s designs pass these tests? Call us and you can try it yourself.</p>
 
-    <p>Finally, launch and deployment. The satellite is integrated into a rocket fairing, launched into space, and deployed in orbit. Operators on Earth establish communication, and the mission officially begins.</p>
+  <p>Finally, launch and deployment. The satellite is integrated into a rocket fairing, launched into space, and deployed in orbit. Operators on Earth establish communication, and the mission officially begins.</p>
 
-    <p>Of course, this is an oversimplified view. Space is hard. Building for space is extremely hard. That is why Lun’s mission is to make it simpler.</p>
+  <p>Of course, this is an oversimplified view. Space is hard. Building for space is extremely hard. That is why Lun’s mission is to make it simpler.</p>
 
-    <p><em>As Marcus Aurelius said, “The obstacle is the way.”</em></p>
+  <p><em>As Marcus Aurelius said, “The obstacle is the way.”</em></p>
 
-    <p>See you soon in the next post.</p>
-
-    <a href="../index.html" class="back">← Back to home</a>
-
-    <!-- Comentarios con Disqus -->
-    <div id="disqus_thread"></div>
-    <script>
-      var disqus_config = function () {
-        this.page.url = window.location.href;  
-        this.page.identifier = "post1";        
-      };
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://TU-SHORTNAME.disqus.com/embed.js'; 
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the comments.</noscript>
-  </div>
-</body>
-</html>
+  <p>See you soon in the next post.</p>
+</div>
