@@ -40,10 +40,9 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--primary);
+.logo-img {
+  max-height: 50px; /* ajustá según el alto de tu header */
+  width: auto;
 }
 
 nav a {
