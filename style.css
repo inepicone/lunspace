@@ -41,8 +41,9 @@ body {
 }
 
 .logo-img {
-  max-height: 50px; /* ajustá según el alto de tu header */
-  width: auto;
+  max-height: 30px; /* mucho más chico */
+  width: auto;      /* mantiene proporciones */
+  display: block;
 }
 
 nav a {
