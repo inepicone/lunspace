@@ -1,23 +1,29 @@
 .blog-post {
-  max-width: 800px;         /* ancho cómodo para leer */
-  margin: 3rem auto;        /* centrado con espacio arriba/abajo */
-  padding: 0 1rem;          /* respiro en los costados */
-  text-align: justify;      /* texto justificado */
-  line-height: 1.8;         /* interlineado cómodo */
-}
-
-.blog-post p {
-  text-indent: 1.5em;       /* sangría al inicio de cada párrafo */
-  margin-bottom: 1.2rem;    /* espacio entre párrafos */
+  max-width: 700px;        /* parecido al ancho de página en Docs */
+  margin: 4rem auto;       /* centrado con bastante aire arriba y abajo */
+  padding: 0 2rem;
+  background: #fff;        /* fondo blanco */
+  color: #545454;          /* el color que ya definimos */
+  font-size: 1.05rem;      /* un poquito más grande para lectura */
+  line-height: 1.8;        /* interlineado como en Drive */
 }
 
 .blog-post h1 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  color: var(--text);
+  text-align: center;      /* título centrado */
+  color: #333;
 }
 
 .blog-post em {
-  color: var(--muted);
-  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #888;
+}
+
+.blog-post p {
+  text-align: justify;     /* justificado como en Drive */
+  text-indent: 2em;        /* sangría al inicio */
+  margin-bottom: 1.5rem;   /* espacio entre párrafos */
 }
