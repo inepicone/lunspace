@@ -144,3 +144,6 @@ input, textarea {
   font-size: 0.9rem;
   color: var(--muted);
 }
+#contact p {
+  margin-bottom: 1.5rem; /* espacio extra */
+}
