@@ -30,9 +30,8 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background: rgba(10,10,10,0.9);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid #222;
+  background: #ffffff; /* blanco */
+  border-bottom: 1px solid #ddd; /* gris claro */
 }
 
 .nav {
