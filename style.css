@@ -132,8 +132,8 @@ input, textarea {
   padding: 0.8rem;
   margin-bottom: 1rem;
   border-radius: var(--radius);
-  border: none;
-  background: #1a1a1a;
+  border: 1px solid #ccc;
+  background: #ffffff;
   color: var(--text);
 }
 
