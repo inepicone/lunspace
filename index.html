@@ -107,7 +107,7 @@
     <div>
       <h2>About & Contact</h2>
       <p>Founded in 2025 in Espoo, Finland, Lun is on a mission to simplify satellite design. We are part of Aalto Business Generator, TNA, and Journeys.</p>
-      <a href="mailto:hello@lun.space" class="btn">hello@lun.space</a>
+      <a href="mailto:info@lunaiforspace" class="btn">info@lunaiforspace</a>
     </div>
     <form onsubmit="sendMail(event)" class="card">
       <input type="text" name="name" placeholder="Name" required />
@@ -131,7 +131,7 @@
       const body = encodeURIComponent(
         `Name: ${data.get("name")}\nCompany: ${data.get("company")}\nEmail: ${data.get("email")}\nMessage: ${data.get("message")}`
       );
-      window.location.href = `mailto:hello@lun.space?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@lunaiforspace.com?subject=${subject}&body=${body}`;
     }
   </script>
 </body>
