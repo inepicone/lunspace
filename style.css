@@ -67,7 +67,7 @@ nav a:hover {
 }
 .btn.primary {
   background: var(--accent); /* 👈 usamos el rojo/naranja */
-  color: #fff;               /* texto blanco para contraste */
+  color: #ffff;               /* texto blanco para contraste */
 }
 
 .btn.secondary { border: 1px solid #333; }
