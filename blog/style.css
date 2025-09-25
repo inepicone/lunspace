@@ -31,3 +31,9 @@
   display: flex;
   gap: 1rem;
 }
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
