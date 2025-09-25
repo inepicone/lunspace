@@ -37,3 +37,6 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+.blog-index .cards {
+  margin-top: 2rem;
+}
