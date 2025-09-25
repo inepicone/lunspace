@@ -1,0 +1,23 @@
+.blog-post {
+  max-width: 800px;         /* ancho cómodo para leer */
+  margin: 3rem auto;        /* centrado con espacio arriba/abajo */
+  padding: 0 1rem;          /* respiro en los costados */
+  text-align: justify;      /* texto justificado */
+  line-height: 1.8;         /* interlineado cómodo */
+}
+
+.blog-post p {
+  text-indent: 1.5em;       /* sangría al inicio de cada párrafo */
+  margin-bottom: 1.2rem;    /* espacio entre párrafos */
+}
+
+.blog-post h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text);
+}
+
+.blog-post em {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
