@@ -40,9 +40,9 @@ body {
   align-items: center;
 }
 
-.logo-img {
-  max-height: 30px; /* mucho más chico */
-  width: auto;      /* mantiene proporciones */
+.logo img {
+  height: 40px;   /* ajusta el alto exacto */
+  width: auto;    /* mantiene proporciones */
   display: block;
 }
 
