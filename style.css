@@ -6,6 +6,7 @@
   --secondary: #f2f2f2;
   --card: #fafafa;    /* fondo de tarjetas */
   --radius: 12px;
+  --accent: #ff3a20; /* color especial */
 }
 
 * {
@@ -64,7 +65,10 @@ nav a:hover {
   text-decoration: none;
   transition: 0.2s;
 }
-.btn.primary { background: var(--primary); color: black; }
+.btn.primary {
+  background: var(--accent);
+  color: white;
+}
 .btn.secondary { border: 1px solid #333; }
 
 .btn:hover { opacity: 0.9; }
