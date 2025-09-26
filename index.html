@@ -9,21 +9,28 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container nav">
-      <div class="logo">
-        <img src="logo.png" alt="Lun logo" class="logo-img" />
-      </div>
-      <nav>
-        <a href="#problem">Problem</a>
-        <a href="#how">How it works</a>
-        <a href="#vision">Vision</a>
-        <a href="blog/index.html">Blog</a>
-        <!-- Header <a href="#youtube">YouTube</a>-->
-        <a href="#contact">Contact</a>
-      </nav>
-      <a href="mailto:info@lunaiforspace.com" class="btn">Request a demo</a>
+  <div class="container nav">
+    <div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Lun logo"></a>
     </div>
-  </header>
+
+    <!-- Botón hamburguesa solo en mobile -->
+    <button class="menu-toggle" onclick="document.body.classList.toggle('menu-open')">
+      ☰
+    </button>
+
+    <nav class="menu">
+      <a href="#problem">Problem</a>
+      <a href="#how">How it works</a>
+      <a href="#vision">Vision</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="mailto:hello@lun.space" class="btn">Request a demo</a>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="hero">
