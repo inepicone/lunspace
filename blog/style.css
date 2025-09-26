@@ -40,19 +40,19 @@ body {
 .blog-index .cards {
   margin-top: 2rem;
 }
-/* Esconde el menú en mobile */
 .menu {
   display: flex;
   gap: 1rem;
 }
 
 .menu-toggle {
-  display: none;
+  display: none; /* oculto por defecto */
   background: none;
   border: none;
   font-size: 1.5rem;
 }
 
+/* En pantallas chicas (ej: celular) */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -71,8 +71,9 @@ body {
   }
 
   .menu-toggle {
-    display: block;
+    display: block; /* solo en mobile */
     cursor: pointer;
     color: var(--text);
   }
 }
+
