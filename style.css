@@ -188,3 +188,13 @@ input, textarea {
     color: var(--text);
   }
 }
+.actions {
+  display: flex;
+  gap: 1.5rem; /* más espacio horizontal en pantallas grandes */
+  flex-wrap: wrap; /* permite que se acomoden en mobile */
+  justify-content: center;
+}
+
+.actions .btn {
+  margin-bottom: 1rem; /* más espacio entre botones en mobile */
+}
