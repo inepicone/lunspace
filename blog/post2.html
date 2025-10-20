@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lun Blog – From Idea to Orbit, Part II</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../logo.png" alt="Lun logo">
+        </a>
+      </div>
+      <nav>
+        <a href="../index.html#problem">Problem</a>
+        <a href="../index.html#how">How it works</a>
+        <a href="../index.html#vision">Vision</a>
+        <a href="index.html">Blog</a>
+        <!--<a href="../index.html#youtube">YouTube</a>-->
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a href="mailto:hello@lun.space" class="btn primary">Request a demo</a>
+    </div>
+  </header>
+
+  <!-- Blog Post -->
+  <div class="container blog-post">
+    <h1>From Idea to Orbit, Part II: How Missions Mature (CMLs + NASA Phases) — and Where Lun Fits</h1>
+    <p><em>Posted on October 2025 – by Inés Picone</em></p>
+
+    <p>Hi again, I’m Inés Picone, founder of <strong>Lun</strong>. In my first post we walked through the big milestones from idea to orbit. Today I want to go one level deeper: <strong>how the industry measures concept maturity</strong>, <strong>how a real mission flows through NASA-style phases</strong>, and <strong>where Lun helps—without hype</strong>.</p>
+
+    <h2>1) A common language for readiness: Concept Maturity Levels (CMLs)</h2>
+    <p><strong>Concept Maturity Levels (CMLs)</strong> give teams a shared way to express <em>how well-defined a mission concept is</em> (different from TRLs, which focus on technology readiness). CMLs help you communicate where the concept stands, make decisions explicit (assumptions, drivers, risks, trades), and identify what’s missing before the next gate. In plain English: CMLs are a checklist for <em>decision quality</em> ahead of major reviews—especially <strong>PDR</strong>—so you don’t “discover the concept” while you’re supposed to be designing it.</p>
+
+    <h2>2) The mission lifecycle (NASA view): from Pre-Phase A to Operations</h2>
+    <p>NASA structures flight projects into <strong>phases</strong> with formal gate reviews:</p>
+    <ul>
+      <li><strong>Pre-Phase A — Concept Studies:</strong> explore mission value/drivers and feasible trade space.</li>
+      <li><strong>Phase A — Concept &amp; Technology Development:</strong> converge on a <strong>baseline</strong> and reduce key risks.</li>
+      <li><strong>Phase B — Preliminary Design:</strong> system architecture and interfaces solidify; prepare for <strong>PDR</strong>.</li>
+      <li><strong>Phase C/D — Final Design, Build &amp; Test:</strong> detailed design, manufacturing, integration, verification, qualification.</li>
+      <li><strong>Phase E — Operations:</strong> commissioning and mission ops.</li>
+    </ul>
+    <p>Centers like the <strong>Mission Design Center (MDC)</strong> at NASA Ames run early <strong>concurrent design</strong> sessions: systems, mechanical, thermal, power, AOCS, payload and ops look at the same board to test feasibility, cost and schedule—<em>before</em> committing big resources. It’s a great model for small-sat teams as well.</p>
+
+    <h2>3) How CMLs and phases talk to each other</h2>
+    <ul>
+      <li><strong>Pre-Phase A → Phase A:</strong> you’re exploring the <strong>trade space</strong>; CML should progress toward a defendable <strong>concept baseline</strong>.</li>
+      <li><strong>Phase B:</strong> you’re in <strong>preliminary design</strong>; reviews (SRR/PDR) lock scope with less uncertainty.</li>
+      <li><strong>Phase C/D:</strong> you build and test; you don’t want to find <strong>layout surprises</strong> here.</li>
+      <li><strong>Phase E:</strong> you fly.</li>
+    </ul>
+    <p>CMLs give clarity on what “ready to pass the gate” really means—for everyone.</p>
+
+    <h2>4) A recurring pain: early rework from internal layout</h2>
+    <p>In small/micro-sat programs, a lot of iteration appears when <strong>mass/CG envelopes</strong>, <strong>clearances/keep-outs</strong>, or <strong>thermal/power</strong> realities show up <strong>late</strong>. That triggers loops across mechanical, AOCS, thermal and power just when timelines get tight (pre-PDR or pre-CDR). It’s common—and costly in time.</p>
+
+    <h2>5) Where Lun fits (today, without overpromising)</h2>
+    <p><strong>Lun</strong> is building an <strong>early-stage design</strong> tool to generate a <strong>first-pass internal layout</strong> and run <strong>first-order checks</strong>—mass/CG envelope, thermal/power proxies, and clearances/keep-outs—so teams can <strong>catch obvious issues earlier</strong> and <strong>avoid unnecessary iteration</strong>.</p>
+    <ul>
+      <li><strong>When to use it:</strong> <strong>Pre-Phase A through Phase B</strong> (before and around PDR), aligned with CML progression.</li>
+      <li><strong>How we operate today:</strong> <strong>controlled beta</strong> (limited users, rate-limited, <strong>auditable usage</strong>), <strong>no sensitive/export-controlled data</strong>, <strong>human-in-the-loop</strong>.</li>
+      <li><strong>What it is not:</strong> a replacement for detailed analysis or qualification. It’s an <strong>early warning</strong> layer to arrive at gates better prepared.</li>
+    </ul>
+
+    <h2>6) Starting a mission study? Practical habits that help</h2>
+    <ul>
+      <li><strong>Define a “value frame” early:</strong> objectives you can measure, key constraints, and design drivers (mass, power, cost, schedule). Decide which <strong>CML</strong> you need to achieve before the next gate.</li>
+      <li><strong>Use concurrent design early:</strong> get systems, mechanical, thermal, power and AOCS looking at the same facts; it saves weeks.</li>
+      <li><strong>Freeze critical assumptions explicitly:</strong> boundary temperatures, average/peak power and dissipation, CG envelopes, keep-outs.</li>
+      <li><strong>Leave decision evidence:</strong> CMLs are about <em>what you chose and why</em>; that lowers friction at SRR/PDR.</li>
+    </ul>
+
+    <p><strong>Space is hard</strong>—that’s why it’s compelling. Frameworks like <strong>CMLs</strong> and the <strong>NASA lifecycle</strong> reduce uncertainty; tools like <strong>Lun</strong> help teams <strong>surface risks earlier</strong> so PDR/CDR is less painful. If you’re willing to share how your team structures early trade studies (or what consistently trips you up), I’d love to read it and learn together.</p>
+
+    <p><a href="index.html">← Back to blog</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Lun. All rights reserved.</p>
+  </footer>
+</body>
+</html>
