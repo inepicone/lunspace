@@ -75,5 +75,26 @@ body {
     cursor: pointer;
     color: var(--text);
   }
+  /* --- Blog index cards: spacing + typography --- */
+.blog-index .cards {
+  margin-bottom: 24px;              /* espacio entre tarjetas */
+}
+
+.blog-index .card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* normaliza tamaños dentro de las tarjetas */
+.blog-index .card h1,
+.blog-index .card h2,
+.blog-index .card h3,
+.blog-index .card p {
+  font-size: 16px;                  /* mismo tamaño en ambas tarjetas */
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+}
+
 }
 
