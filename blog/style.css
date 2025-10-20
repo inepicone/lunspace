@@ -75,7 +75,9 @@ body {
     cursor: pointer;
     color: var(--text);
   }
-  /* --- Blog index cards: spacing + typography --- */
+}  /* <-- cierra @media (max-width: 768px) */
+
+/* --- Blog index cards: spacing + typography (global) --- */
 .blog-index .cards {
   margin-bottom: 24px;              /* espacio entre tarjetas */
 }
