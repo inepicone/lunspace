@@ -141,3 +141,29 @@ body {
     color: var(--text);
   }
 }
+/* ===== FIX spacing cards blog index (put this at the END of your CSS) ===== */
+
+.blog-index .cards {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;  /* espacio entre contenedores .cards */
+}
+
+.blog-index .cards .card {
+  display: block !important;
+  width: 100% !important;
+
+  margin: 0 0 18px 0 !important;   /* espacio entre tarjetas */
+  padding: 18px 22px !important;   /* aire interno */
+
+  border: 1px solid rgba(0,0,0,0.18) !important;
+  border-radius: 14px !important;
+  background: var(--bg) !important;
+
+  box-sizing: border-box !important;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.blog-index .cards .card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
