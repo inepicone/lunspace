@@ -1,3 +1,7 @@
+/* ===============================
+   Blog post (single article)
+   =============================== */
+
 .blog-post {
   max-width: 800px;
   margin: 4rem auto;
@@ -26,40 +30,101 @@
   text-indent: 1.5em;
   margin-bottom: 1.5rem;
 }
+
 .back-link {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
 }
+
+/* ===============================
+   Blog index (list of posts)
+   =============================== */
+
+.blog-index {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.blog-index .cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tarjeta individual */
+.blog-index .card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  margin-bottom: 16px;          /* separación entre tarjetas */
+  padding: 16px 20px;           /* aire interno */
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: var(--bg);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover suave */
+.blog-index .card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Tipografía dentro de las tarjetas */
+.blog-index .card h1,
+.blog-index .card h2,
+.blog-index .card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.blog-index .card p {
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ===============================
+   Global
+   =============================== */
+
 body {
   font-family: system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
-.blog-index .cards {
-  margin-top: 2rem;
-}
+
+/* ===============================
+   Navigation
+   =============================== */
+
 .menu {
   display: flex;
   gap: 1rem;
 }
 
 .menu-toggle {
-  display: none; /* oculto por defecto */
+  display: none;
   background: none;
   border: none;
   font-size: 1.5rem;
 }
 
-/* En pantallas chicas (ej: celular) */
+/* Mobile navigation */
 @media (max-width: 768px) {
   .menu {
     display: none;
     flex-direction: column;
     background: var(--bg);
     position: absolute;
-    top: 60px; /* debajo del header */
+    top: 60px;
     right: 0;
     left: 0;
     padding: 1rem;
@@ -71,32 +136,8 @@ body {
   }
 
   .menu-toggle {
-    display: block; /* solo en mobile */
+    display: block;
     cursor: pointer;
     color: var(--text);
   }
-}  /* <-- cierra @media (max-width: 768px) */
-
-/* --- Blog index cards: spacing + typography (global) --- */
-.blog-index .cards {
-  margin-bottom: 24px;              /* espacio entre tarjetas */
 }
-
-.blog-index .card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-/* normaliza tamaños dentro de las tarjetas */
-.blog-index .card h1,
-.blog-index .card h2,
-.blog-index .card h3,
-.blog-index .card p {
-  font-size: 16px;                  /* mismo tamaño en ambas tarjetas */
-  line-height: 1.5;
-  margin: 0 0 8px 0;
-}
-
-
-
