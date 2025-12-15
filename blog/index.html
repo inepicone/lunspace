@@ -7,56 +7,54 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-F02K221PJR');
   </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lun Blog</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
- <header class="header">
-  <div class="container nav">
-    <div class="logo">
-      <a href="../index.html"><img src="../logo.png" alt="Lun logo"></a>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <a href="../index.html"><img src="../logo.png" alt="Lun logo"></a>
+      </div>
+
+      <button class="menu-toggle" onclick="document.body.classList.toggle('menu-open')">
+        ☰
+      </button>
+
+      <nav class="menu">
+        <a href="../index.html#problem">Problem</a>
+        <a href="../index.html#how">How it works</a>
+        <a href="../index.html#vision">Vision</a>
+        <a href="index.html">Blog</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+
+      <a href="mailto:hello@lun.space" class="btn">Request a demo</a>
     </div>
+  </header>
 
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle" onclick="document.body.classList.toggle('menu-open')">
-      ☰
-    </button>
-
-    <nav class="menu">
-      <!-- Todos apuntan a la home con su ancla -->
-      <a href="../index.html#problem">Problem</a>
-      <a href="../index.html#how">How it works</a>
-      <a href="../index.html#vision">Vision</a>
-      <a href="index.html">Blog</a>
-      <a href="../index.html#contact">Contact</a>
-    </nav>
-
-    <a href="mailto:info@lunaiforspace.com" class="btn">Request a demo</a>
-  </div>
-</header>
-
-<div class="container blog-index">
+  <div class="container blog-index">
     <h1>Lun Blog</h1>
     <p>Insights, news, and thoughts on satellite design and more...</p>
 
+    <!-- UN SOLO contenedor -->
     <div class="cards">
       <a href="how-satellites-come-to-life.html" class="card">
         <h3>From idea to orbit: how satellites come to life</h3>
         <p>How satellites go from mission definition to launch and where Lun fits in.</p>
       </a>
-    </div>
-    <div class="cards">
+
       <a href="post2.html" class="card">
         <h3>From Idea to Orbit, Part II</h3>
         <p>How Missions Mature (CMLs + NASA Phases) and Where Lun fits</p>
       </a>
-    </div>
-    <div class="cards">
+
       <a href="post3.html" class="card">
         <h3>Small moves are not small</h3>
         <p>Why internal layout drives early satellite design</p>
