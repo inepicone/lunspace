@@ -167,3 +167,27 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 10px 26px rgba(0,0,0,0.08);
 }
+/* Blog index: cards spacing (put at the END so it overrides style.css) */
+.blog-index .cards {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;          /* <-- separación real */
+  margin-top: 2rem !important;
+}
+
+/* The actual card box */
+.blog-index .card {
+  display: block !important;
+  padding: 18px 22px !important;
+  border: 1px solid rgba(0,0,0,0.25) !important;
+  border-radius: 14px !important;
+  background: var(--bg) !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  box-sizing: border-box !important;
+}
+
+.blog-index .card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
