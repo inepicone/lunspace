@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K221PJR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F02K221PJR');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lun Blog – Small moves are not small</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    /* ajustes locales del post */
+    .blog-post {
+      line-height: 1.7; /* más interlineado */
+    }
+    .blog-post p,
+    .blog-post li {
+      text-align: justify; /* texto justificado */
+    }
+    .blog-post ul,
+    .blog-post ol {
+      list-style: none;     /* sin viñetas ni números */
+      padding-left: 0;
+      margin-left: 0;
+    }
+    .blog-post li {
+      margin-bottom: 0.5rem; /* aire entre ítems */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../logo.png" alt="Lun logo"/>
+        </a>
+      </div>
+      <nav>
+        <a href="../index.html#problem">Problem</a>
+        <a href="../index.html#how">How it works</a>
+        <a href="../index.html#vision">Vision</a>
+        <a href="index.html">Blog</a>
+        <!--<a href="../index.html#youtube">YouTube</a>-->
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a href="mailto:hello@lun.space" class="btn primary">Request a demo</a>
+    </div>
+  </header>
+
+  <!-- Blog Post -->
+  <div class="container blog-post">
+    <h1>Small moves are not small: why internal layout drives early satellite design</h1>
+    <p><em>Posted on November 2025 – by Inés Picone</em></p>
+
+    <p>If you have ever worked on early satellite design, you know this moment: you move a component just a few centimeters, and suddenly several things change at once.</p>
+
+    <p>A thermal path becomes longer. A structural support no longer aligns. A harness route needs to be reworked. A vibration mode shifts. A power margin quietly disappears.</p>
+
+    <p>None of these effects is dramatic on its own. The difficulty is that they happen together.</p>
+
+    <p>This is one of the most misunderstood aspects of early spacecraft design. Internal layout is often treated as a mechanical problem, something to “rough in” and refine later. In reality, layout is one of the earliest places where system coupling becomes unavoidable.</p>
+
+    <h2>Early design is a coupled physics problem</h2>
+    <p>At the beginning of a mission, most models are simplified. Thermal is averaged. Power is budgeted. Dynamics are linearized. That is not a flaw; it is necessary. But it also means that small geometric changes can have outsized consequences when multiple disciplines are affected simultaneously.</p>
+
+    <p>Moving a component is never just a geometric operation. It changes:</p>
+    <ul>
+      <li>conductive and radiative thermal paths</li>
+      <li>load paths and stiffness distribution</li>
+      <li>harness length and routing constraints</li>
+      <li>center of gravity and inertia tensor</li>
+      <li>local power dissipation and margins</li>
+    </ul>
+
+    <p>These effects interact. You cannot reason about them independently for long. This is why early layout work feels slow and messy: you are not optimizing yet, you are discovering couplings.</p>
+
+    <h2>Why layout surprises appear late</h2>
+    <p>In many small and microsatellite programs, layout realism arrives late in the process. Early concepts focus on payload performance, mass budgets, and subsystem sizing, while spatial constraints remain abstract.</p>
+
+    <p>The problem is not that teams ignore layout. It is that layout is deferred until there is “enough information.” By the time components are placed with realistic envelopes, keep-outs, and interfaces, the concept is already emotionally and programmatically committed.</p>
+
+    <p>This is when painful iteration loops appear, often just before PDR:</p>
+    <ul>
+      <li>mass and CG move outside expected envelopes</li>
+      <li>thermal margins shrink unexpectedly</li>
+      <li>harness complexity grows faster than anticipated</li>
+      <li>mechanical and AOCS assumptions no longer hold</li>
+    </ul>
+
+    <p>At that stage, change is still possible, but it is no longer cheap.</p>
+
+    <h2>Layout as an early warning signal</h2>
+    <p>Seen this way, internal layout is not about precision. It is about visibility.</p>
+
+    <p>A first-pass layout does not need millimeter accuracy. What it needs is to expose obvious incompatibilities early:</p>
+    <ul>
+      <li>components competing for the same volume</li>
+      <li>unrealistic thermal paths</li>
+      <li>hidden dependencies between subsystems</li>
+      <li>assumptions that only work “if everything else stays ideal”</li>
+    </ul>
+
+    <p>This is also why early concurrent design is so effective. When systems, mechanical, thermal, power, and AOCS look at the same spatial reality, conversations change. Questions become sharper. Trade-offs become explicit.</p>
+
+    <h2>Where this fits in the design lifecycle</h2>
+    <p>Frameworks like concept maturity levels and NASA-style lifecycle phases exist for a reason. They are not there to slow teams down, but to ensure that certain questions are asked before passing gates.</p>
+
+    <p>Internal layout is one of those questions. Not in detail, but in principle. By preliminary design, teams should not be discovering that their architecture is geometrically fragile.</p>
+
+    <p>At <strong>Lun</strong>, we think of early layout as an early warning layer. The goal is not to replace detailed analysis or CAD, but to surface coupled effects sooner, when iteration is still healthy instead of stressful.</p>
+
+    <h2>Small moves are not small</h2>
+    <p>Spacecraft are tightly coupled systems. Small moves cascade because physics does not respect organizational boundaries. The earlier those cascades become visible, the better teams can reason about them.</p>
+
+    <p>Small moves are not small. They are signals. Early design is about learning to read them.</p>
+
+    <p>If you have seen a “tiny” change trigger weeks of rework, I would love to hear what moved—and what followed.</p>
+
+    <p><a href="index.html">← Back to blog</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Lun. All rights reserved.</p>
+  </footer>
+</body>
+</html>
