@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F02K221PJR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F02K221PJR');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lun Blog – The patchwork of tools</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <style>
+    /* ajustes locales del post */
+    .blog-post {
+      line-height: 1.7;
+    }
+    .blog-post p,
+    .blog-post li {
+      text-align: justify;
+    }
+    .blog-post ul,
+    .blog-post ol {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+    .blog-post li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../logo.png" alt="Lun logo"/>
+        </a>
+      </div>
+      <nav>
+        <a href="../index.html#problem">Problem</a>
+        <a href="../index.html#how">How it works</a>
+        <a href="../index.html#vision">Vision</a>
+        <a href="index.html">Blog</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <a href="mailto:hello@lun.space" class="btn primary">Request a demo</a>
+    </div>
+  </header>
+
+  <!-- Blog Post -->
+  <div class="container blog-post">
+    <h1>The patchwork of tools: why subsystem analyses struggle to stay aligned</h1>
+    <p><em>Posted on January 2026 – by Inés Picone</em></p>
+
+    <p>In conversations with spacecraft engineers across disciplines, one expression comes up again and again: “a patchwork of tools.”</p>
+
+    <p>Early satellite design is inherently multidisciplinary. Thermal, power, structures, AOCS, payload, systems. Each subsystem relies on its own analysis methods and its own tools. This specialization is necessary. The problem is not that teams use different tools. The problem is that each tool encodes a different representation of the spacecraft, and those representations rarely stay aligned as the design evolves.</p>
+
+    <p>It is important to understand that one spacecraft is represented by many models. In theory, everyone is designing the same satellite. In practice, each subsystem works with its own model.</p>
+
+    <p>Thermal uses node-based models and averaged dissipation. Power relies on budgets, duty cycles, orbital profiles, and margins. AOCS focuses on mass properties, envelopes, inertia tensors, and disturbances. Mechanical works with loads, stiffness, interfaces, and constraints. Systems engineering tries to reconcile all of the above into something coherent.</p>
+
+    <p>Each model is valid within its domain. Each captures an important slice of reality. But none of them is complete, and they are not naturally coupled to one another. Over time, the spacecraft slowly diverges into multiple versions of reality.</p>
+
+    <p>This patchwork of tools is not the result of poor engineering practice. It exists because early design demands speed, flexibility, and approximation. Different questions require different abstractions, and no single model can answer everything.</p>
+
+    <p>At early stages, it would be unrealistic and counterproductive to force all disciplines into a single detailed representation. Simplified models are not a weakness. They are what make exploration possible.</p>
+
+    <p>The difficulty appears when changes propagate unevenly. A mass update reflected in an AOCS spreadsheet may not immediately reach thermal assumptions. A layout tweak in CAD may lag behind power budgets. None of these gaps is dramatic on its own. Together, they accumulate.</p>
+
+    <p>Early design is where assumptions are abundant and iteration is frequent. Requirements shift, architectures evolve, and trade spaces are still open. At the same time, models are loosely connected, so alignment often relies on human communication and shared understanding.</p>
+
+    <p>As long as the concept remains abstract, misalignments stay hidden. Problems rarely appear as small discrepancies. They surface later as surprises, such as margins that evaporate, thermal limits that suddenly tighten, mass properties that no longer fit control assumptions, or interfaces that cannot coexist spatially.</p>
+
+    <p>These issues feel sudden, but they are not new. They are the result of models drifting apart long before anyone noticed.</p>
+
+    <p>For many teams, the moment when subsystem models are finally forced to confront each other is when geometry becomes real. Layouts solidify, interfaces exist, and mass properties stop being “expected” values. This is when the patchwork is no longer tolerable, and inconsistencies can no longer hide.</p>
+
+    <p>Alignment means shared assumptions across disciplines, awareness of model validity and limits, parameters that evolve together, even if approximately, and early visibility of coupled effects. It is about coherence, not precision.</p>
+
+    <p>The patchwork of tools is not going away. Multidisciplinary design will always involve multiple abstractions. The challenge is not to eliminate the patchwork, but to understand its consequences and manage it deliberately.</p>
+
+    <p>If you have worked on early mission studies, you have likely seen this drift firsthand. Where have you seen subsystem models diverge the most, and when did it finally become visible?</p>
+
+    <p><a href="index.html">← Back to blog</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Lun. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+</html>
