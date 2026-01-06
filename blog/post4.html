@@ -57,15 +57,13 @@
   <!-- Blog Post -->
   <div class="container blog-post">
     <h1>The patchwork of tools: why subsystem analyses struggle to stay aligned</h1>
-    <p><em>Posted on January 2026 – by Inés Picone</em></p>
+    <p><em>Posted in January 2026 – by Inés Picone</em></p>
 
     <p>In conversations with spacecraft engineers across disciplines, one expression comes up again and again: “a patchwork of tools.”</p>
 
-    <p>Early satellite design is inherently multidisciplinary. Thermal, power, structures, AOCS, payload, systems. Each subsystem relies on its own analysis methods and its own tools. This specialization is necessary. The problem is not that teams use different tools. The problem is that each tool encodes a different representation of the spacecraft, and those representations rarely stay aligned as the design evolves.</p>
+    <p>Early satellite design is inherently multidisciplinary. Thermal, power, structures, AOCS, payload. Each subsystem relies on its own analysis methods and its own tools. This specialization is necessary. The problem is not that teams use different tools. The problem is that each tool encodes a different representation of the spacecraft, and those representations rarely stay aligned as the design evolves.</p>
 
-    <p>It is important to understand that one spacecraft is represented by many models. In theory, everyone is designing the same satellite. In practice, each subsystem works with its own model.</p>
-
-    <p>Thermal uses node-based models and averaged dissipation. Power relies on budgets, duty cycles, orbital profiles, and margins. AOCS focuses on mass properties, envelopes, inertia tensors, and disturbances. Mechanical works with loads, stiffness, interfaces, and constraints. Systems engineering tries to reconcile all of the above into something coherent.</p>
+    <p>It is important to understand that one spacecraft is represented by many models. In theory, everyone is designing the same satellite. In practice, each subsystem (thermal, power, mechanical) works with its own model.</p>
 
     <p>Each model is valid within its domain. Each captures an important slice of reality. But none of them is complete, and they are not naturally coupled to one another. Over time, the spacecraft slowly diverges into multiple versions of reality.</p>
 
@@ -75,13 +73,13 @@
 
     <p>The difficulty appears when changes propagate unevenly. A mass update reflected in an AOCS spreadsheet may not immediately reach thermal assumptions. A layout tweak in CAD may lag behind power budgets. None of these gaps is dramatic on its own. Together, they accumulate.</p>
 
-    <p>Early design is where assumptions are abundant and iteration is frequent. Requirements shift, architectures evolve, and trade spaces are still open. At the same time, models are loosely connected, so alignment often relies on human communication and shared understanding.</p>
+    <p>Early design is where assumptions are abundant, and iteration is frequent. Requirements shift, architectures evolve, and trade spaces are still open. At the same time, models are loosely connected, so alignment often relies on human communication and shared understanding.</p>
 
     <p>As long as the concept remains abstract, misalignments stay hidden. Problems rarely appear as small discrepancies. They surface later as surprises, such as margins that evaporate, thermal limits that suddenly tighten, mass properties that no longer fit control assumptions, or interfaces that cannot coexist spatially.</p>
 
     <p>These issues feel sudden, but they are not new. They are the result of models drifting apart long before anyone noticed.</p>
 
-    <p>For many teams, the moment when subsystem models are finally forced to confront each other is when geometry becomes real. Layouts solidify, interfaces exist, and mass properties stop being “expected” values. This is when the patchwork is no longer tolerable, and inconsistencies can no longer hide.</p>
+    <p>For many teams, the moment when subsystem models are finally forced to confront each other is when geometry becomes real. Layouts solidify, interfaces exist, and mass properties stop being “expected” values. This is when the patchwork is no longer tolerable, and inconsistencies can no longer be hidden.</p>
 
     <p>Alignment means shared assumptions across disciplines, awareness of model validity and limits, parameters that evolve together, even if approximately, and early visibility of coupled effects. It is about coherence, not precision.</p>
 
@@ -97,6 +95,4 @@
     <p>© 2026 Lun. All rights reserved.</p>
   </footer>
 </body>
-</html>
-
 </html>
